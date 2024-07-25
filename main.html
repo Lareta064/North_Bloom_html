@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="./libs/fancybox/fancybox.css">
   <!--======= main styles ======-->
   <link rel="stylesheet" href="./css/main.css">
-  <title>О нас</title>
+  <title>Главная</title>
   <style>
     @font-face {
       font-family: 'Inter';
@@ -74,7 +74,7 @@
 </head>
 
 <body>
-  <div class="page-wrapper page-wrapper--white">
+  <div class="page-wrapper">
     <!--====== HEADER=====-->
     <header class="header header--special" id="header">
       <!--==== HEADER SEARCH BLOCK ====-->
@@ -178,92 +178,137 @@
         </div>
       </div>
     </header>
-    <main class="inner-main">
-      <section class="about">
-        <div class="container">
-          <!--====хлебные крошки===-->
-          <div class="breadcrumbs">
-            <a href="index.html">Главная</a>
-            <a href="#!"> О Бренде</a>
-            <!--===== этот пункт хлебных крошек отображается на экранах до 1024px-->
-            <p>
-              <a class="txt-24 chevron-link" href="index.html">
-                <svg class="svg-chevron-left">
-                  <use href="./img/sprite.svg#svg-chevron-left"></use>
-                </svg>
-                <span>Вернуться</span>
-              </a>
-            </p>
-          </div>
-          <div class="section-title section-title--center">
-            <h1 class="h1-serif txt-center">Производитель качественной верхней одежды "NorthBloom" из Санкт-Петербурга</h1>
-          </div>
-          <div class="about-hero">
-            <picture>
-              <source srcset="./img/about-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)">
-              <source srcset="./img/about-w1024@2x.webp" media="(max-width: 1199px) and (min-resolution: 192dpi)">
-              <source srcset="./img/about-w1024.webp" media="(max-width: 1199px)">
-              <source srcset="./img/about@2x.webp" media="(min-resolution: 192dpi)">
-              <img class="lazy" src="./img/about.webp" width="1872" height="1248" alt="img">
-            </picture>
-          </div>
-          <div class="about-description custom-text">
-            <div class="about-description__title">
-              <p>Наш лозунг</p>
-              <div class="title-96">NorthBloom – все дело в качестве!</div>
-              <span class="brand-label">Работаем с 1997</span>
+    <main class="main">
+      <section class="main-hero">
+        <div class="main-hero-slider swiper">
+          <div class="swiper-wrapper">
+            <!--==== single slide =====-->
+            <div class="swiper-slide">
+              <div class="hero-slide">
+                <div class="hero-slide__img">
+                  <picture>
+                    <source srcset="./img/main-slider/slide-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" width="767">
+                    <source srcset="./img/main-slider/slide-w375.webp" media="(max-width: 767px)" width="767">
+                    <source srcset="./img/main-slider/slide@2x.webp" media="(min-resolution: 192dpi)" width="1920" height="1080">
+                    <img src="./img/main-slider/slide.webp" width="1920" height="1080" alt="img">
+                  </picture>
+                </div>
+                <!--===== slide text ====-->
+                <div class="hero-slide__text">
+                  <div class="h1-serif">Коллекция NorthBloom Зима 2024</div>
+                  <div class="center-group mt-24">
+                    <a class="txt-24 chevron-link" href="catalogy.html">
+                      <span>Для мужчин</span>
+                      <svg class="svg-chevron-right">
+                        <use href="./img/sprite.svg#svg-chevron-right"></use>
+                      </svg>
+                    </a>
+                    <a class="txt-24 chevron-link" href="catalogy.html">
+                      <span>Для женщин</span>
+                      <svg class="svg-chevron-right">
+                        <use href="./img/sprite.svg#svg-chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="container-slim">
-              <div class="about-description__img mb-24">
-                <div class="brand-img">
-                  <svg class="brand-logo txt-grey">
-                    <use href="./img/sprite.svg#brand-logo"></use>
-                  </svg>
+            <!--==== single slide =====-->
+            <div class="swiper-slide">
+              <div class="hero-slide">
+                <div class="hero-slide__img">
+                  <picture>
+                    <source srcset="./img/main-slider/slide3-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" width="767">
+                    <source srcset="./img/main-slider/slide3-w375.webp" media="(max-width: 767px)" width="767">
+                    <source srcset="./img/main-slider/slide3@2x.webp" media="(min-resolution: 192dpi)" width="1920" height="1080">
+                    <img src="./img/main-slider/slide3.webp" width="1920" height="1080" alt="img">
+                  </picture>
                 </div>
-                <picture>
-                  <source srcset="./img/about2-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)">
-                  <source srcset="./img/about2-w375.webp" media="(max-width: 767px)">
-                  <source srcset="./img/about2@2x.webp" media="(min-resolution: 192dpi)">
-                  <img class="lazy img-cover" src="./img/about2.webp" width="923" height="1384" alt="img">
-                </picture>
-              </div>
-              <div class="about-description__text">
-                <div class="grey-card">
-                  <div class="h2">Наш опыт</div>
-                  <p>История компании NorthBloom началась в Санкт-Петербурге в 1997 году с небольшого производства, ориентированного на локальный рынок. Постепенно, увеличивая объем производства, компания расширяла границы реализации продукции и укрепляла свои позиции на рынке верхней одежды. На сегодняшний день, бренд NorthBloom известен и любим потребителями по всей России.</p>
-                </div>
-                <div class="grey-card">
-                  <div class="h2">Кто мы</div>
-                  <p>Мы - команда профессионалов, любящих свое дело и стремящихся достичь наилучших результатов в создании комфортной и стильной верхней одежды.</p>
-                </div>
-                <div class="grey-card">
-                  <div class="h2">Почему мы</div>
-                  <p>Наши несомненные преимущества:</p>
-                  <ul>
-                    <li>Имеем собственный отдел новых разработок: наши сотрудники внимательно отслеживают появление новых технологий в области пошива верхней одежды, посещают международные выставки и показы новых коллекций;</li>
-                    <li>Комплексно внедряем новые технологии и разработки в области комфорта;</li>
-                    <li>Обладаем обширной наработанной базой лекал, ориентируемых на российского потребителя. Отличительная особенность наших курток – это хорошая «посадка»;</li>
-                    <li>Мы выбираем только самые лучшие материалы от известных мировых производителей;</li>
-                    <li>Создана собственная система контроля качества: начиная от тщательных закупок комплектующих, заканчивая готовым продуктом.</li>
-                  </ul>
+                <!--===== slide text ====-->
+                <div class="hero-slide__text">
+                  <div class="h1-serif">Коллекция NorthBloom Осень 2024</div>
+                  <div class="center-group mt-24">
+                    <a class="txt-24 chevron-link" href="catalogy.html">
+                      <span>Для мужчин</span>
+                      <svg class="svg-chevron-right">
+                        <use href="./img/sprite.svg#svg-chevron-right"></use>
+                      </svg>
+                    </a>
+                    <a class="txt-24 chevron-link" href="catalogy.html">
+                      <span>Для женщин</span>
+                      <svg class="svg-chevron-right">
+                        <use href="./img/sprite.svg#svg-chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="about-description__video">
-                <div class="video-wrapper">
-                  <video class="video lazy" playsinline>
-                    <source src="./video/video.mp4" type="video/mp4">
-                  </video>
-                  <!--==== btn play ====-->
-                  <button class="btn-play-wrapper">
-                    <span class="btn-play"></span>
-                  </button>
-                  <div class="video-poster">
-                    <img class="lazy img-cover" src="./img/poster2.webp" alt="img" width="924" height="608">
+            </div>
+            <!--==== single slide =====-->
+            <div class="swiper-slide">
+              <div class="hero-slide">
+                <div class="hero-slide__img">
+                  <picture>
+                    <source srcset="./img/main-slider/slide2-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" width="767">
+                    <source srcset="./img/main-slider/slide2-w375.webp" media="(max-width: 767px)" width="767">
+                    <source srcset="./img/main-slider/slide2@2x.webp" media="(min-resolution: 192dpi)" width="1920" height="1080">
+                    <img src="./img/main-slider/slide2.webp" width="1920" height="1080" alt="img">
+                  </picture>
+                </div>
+                <!--===== slide text ====-->
+                <div class="hero-slide__text">
+                  <div class="h1-serif">Коллекция NorthBloom Весна 2024</div>
+                  <div class="center-group mt-24">
+                    <a class="txt-24 chevron-link" href="catalogy.html">
+                      <span>Для мужчин</span>
+                      <svg class="svg-chevron-right">
+                        <use href="./img/sprite.svg#svg-chevron-right"></use>
+                      </svg>
+                    </a>
+                    <a class="txt-24 chevron-link" href="catalogy.html">
+                      <span>Для женщин</span>
+                      <svg class="svg-chevron-right">
+                        <use href="./img/sprite.svg#svg-chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--==== single slide =====-->
+            <div class="swiper-slide">
+              <div class="hero-slide">
+                <div class="hero-slide__img">
+                  <picture>
+                    <source srcset="./img/main-slider/slide4-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" width="767">
+                    <source srcset="./img/main-slider/slide4-w375.webp" media="(max-width: 767px)" width="767">
+                    <source srcset="./img/main-slider/slide4@2x.webp" media="(min-resolution: 192dpi)" width="1920" height="1080">
+                    <img src="./img/main-slider/slide4.webp" width="1920" height="1080" alt="img">
+                  </picture>
+                </div>
+                <!--===== slide text ====-->
+                <div class="hero-slide__text">
+                  <div class="h1-serif">Коллекция NorthBloom Лето 2024</div>
+                  <div class="center-group mt-24">
+                    <a class="txt-24 chevron-link" href="catalogy.html">
+                      <span>Для мужчин</span>
+                      <svg class="svg-chevron-right">
+                        <use href="./img/sprite.svg#svg-chevron-right"></use>
+                      </svg>
+                    </a>
+                    <a class="txt-24 chevron-link" href="catalogy.html">
+                      <span>Для женщин</span>
+                      <svg class="svg-chevron-right">
+                        <use href="./img/sprite.svg#svg-chevron-right"></use>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="main-hero-pagination swiper-pagination"></div>
+          <div class="swiper-rect"></div>
         </div>
       </section>
     </main>
@@ -339,6 +384,18 @@
         </div>
       </div>
     </footer>
+    <div class="popup-wrapper cooki-popup">
+      <!--===btn close popup ===-->
+      <button class="btn-close" type="button">
+        <svg class="svg-close">
+          <use href="./img/sprite.svg#svg-close"></use>
+        </svg>
+      </button>
+      <!--===text ===-->
+      <div class="txt-18">Мы используем cookie</div>
+      <p class="txt-14">Продолжая пользоваться сайтом, вы даёте Согласие на автоматический сбор и анализ ваших данных, необходимых для работы сайта и его улучшения, использование файлов cookie.</p>
+      <button class="mt-24 btn btn--medium w-100" type="button">Согласен</button>
+    </div>
   </div>
   <!--=============== jquery ==================-->
   <script src="./libs/jquery/jquery-3.0.0.min.js"></script>
