@@ -4364,7 +4364,7 @@ select::placeholder {
   .single-product__gallery .swiper .swiper-slide a {
     display: block;
     width: 100%;
-    aspect-ratio: 2/3;
+    aspect-ratio: 853/1280;
   }
 
   .single-product__gallery .swiper img {
